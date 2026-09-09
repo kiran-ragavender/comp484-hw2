@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="480" viewBox="0 0 820 480" font-family="Segoe UI, Arial, sans-serif">
+  <style>
+    .h1 { font-size: 18px; font-weight: bold; fill: #222; }
+    .h2 { font-size: 16px; font-weight: bold; fill: #333; }
+    .h3 { font-size: 15px; fill: #444; }
+    .h4 { font-size: 14px; fill: #666; }
+    .tag { font-size: 12px; font-style: italic; fill: #888; }
+    line { stroke: #bbb; stroke-width: 1.5; }
+  </style>
+
+  <rect x="10" y="10" width="800" height="460" fill="#ffffff" stroke="#222" stroke-width="2" rx="8"/>
+  <text x="28" y="40" font-size="18" font-weight="bold">Document outline &#8211; structure.html</text>
+  <text x="28" y="60" class="tag">(generated via HTML5 outline algorithm / heading rank)</text>
+
+  <text x="40" y="95" class="h1">1. Comp 484</text>
+  <text x="60" y="120" class="h2">1.1 Structuring Pages</text>
+  <line x1="45" y1="130" x2="45" y2="150"/>
+
+  <text x="40" y="165" class="h1">2. &lt;article&gt; &#8211; page content</text>
+  <text x="60" y="190" class="h3">2.1 Conveying meaning through structure <tspan class="tag">(article &gt; header, h3)</tspan></text>
+  <text x="60" y="215" class="h3">2.2 Sectioning elements <tspan class="tag">(section, h3)</tspan></text>
+  <text x="60" y="240" class="h3">2.3 Document outlines <tspan class="tag">(section, h3)</tspan></text>
+  <text x="80" y="265" class="h4">2.3.1 W3C Warning <tspan class="tag">(aside role="complementary", h4)</tspan></text>
+  <text x="60" y="290" class="h3">2.4 WAI-ARIA Roles <tspan class="tag">(section, h3)</tspan></text>
+
+  <text x="40" y="325" class="h1">3. &lt;footer role="contentinfo"&gt;</text>
+  <text x="60" y="350" class="h3">3.1 CSUN contact info</text>
+
+  <rect x="28" y="375" width="760" height="80" fill="#f4f4f4" stroke="#ccc" rx="6"/>
+  <text x="40" y="398" font-size="13" fill="#333">Sectioning elements (article, section, aside, nav) each start a new</text>
+  <text x="40" y="418" font-size="13" fill="#333">outline node; heading rank (h1&#8211;h4) inside them sets the sub-level.</text>
+  <text x="40" y="438" font-size="13" fill="#333">This keeps the outline shallow and consistent even though headings jump from h1 to h3.</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" font-family="Segoe UI, Arial, sans-serif">
+  <style>
+    .box { fill: #ffffff; stroke: #555; stroke-width: 2; rx: 6; }
+    .header { fill: #fde2c8; stroke: #c8792f; }
+    .nav { fill: #d7ecff; stroke: #3f83b0; }
+    .main { fill: #eef3e5; stroke: #7a9a4b; }
+    .article { fill: #ffffff; stroke: #7a9a4b; stroke-dasharray: 4,3; }
+    .section { fill: #f7f7f7; stroke: #888; }
+    .aside { fill: #f0e5f7; stroke: #7c4f96; }
+    .footer { fill: #fde2c8; stroke: #c8792f; }
+    .tag { font-weight: bold; font-size: 15px; }
+    .role { font-size: 12px; font-style: italic; fill: #555; }
+    .note { font-size: 12px; fill: #333; }
+  </style>
+
+  <rect x="10" y="10" width="880" height="740" fill="#ffffff" stroke="#222" stroke-width="2" rx="8"/>
+  <text x="30" y="38" font-size="18" font-weight="bold">Semantic tag structure &#8211; COMP 484 HW2 site</text>
+
+  <!-- header -->
+  <rect x="30" y="55" width="840" height="110" class="box header" rx="6"/>
+  <text x="45" y="78" class="tag">&lt;header role="banner"&gt;</text>
+  <text x="45" y="98" class="note">h1 "Comp 484" &#8226; h2 (page title)</text>
+
+  <!-- nav inside header -->
+  <rect x="45" y="105" width="300" height="50" class="box nav" rx="6"/>
+  <text x="55" y="125" class="tag">&lt;nav role="navigation"&gt;</text>
+  <text x="55" y="143" class="note">&lt;ul&gt;&lt;li&gt;&lt;a&gt;&#8230;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</text>
+
+  <!-- main -->
+  <rect x="30" y="180" width="840" height="470" class="box main" rx="6"/>
+  <text x="45" y="203" class="tag">&lt;main role="main"&gt;</text>
+
+  <!-- article -->
+  <rect x="50" y="215" width="800" height="420" class="box article" rx="6"/>
+  <text x="65" y="238" class="tag">&lt;article&gt;</text>
+
+  <!-- article header -->
+  <rect x="70" y="250" width="760" height="55" class="box header" rx="6"/>
+  <text x="85" y="272" class="tag">&lt;header&gt;</text>
+  <text x="85" y="292" class="note">h3 intro heading + intro paragraph</text>
+
+  <!-- section 1 -->
+  <rect x="70" y="315" width="760" height="70" class="box section" rx="6"/>
+  <text x="85" y="337" class="tag">&lt;section&gt;</text>
+  <text x="85" y="357" class="note">h3 "Sectioning elements" + paragraphs</text>
+
+  <!-- section 2 with aside -->
+  <rect x="70" y="395" width="760" height="130" class="box section" rx="6"/>
+  <text x="85" y="417" class="tag">&lt;section&gt;</text>
+  <text x="85" y="437" class="note">h3 "Document outlines" + paragraphs</text>
+
+  <rect x="450" y="450" width="360" height="65" class="box aside" rx="6"/>
+  <text x="465" y="472" class="tag">&lt;aside role="complementary"&gt;</text>
+  <text x="465" y="492" class="note">h4 "W3C Warning" + blockquote</text>
+
+  <!-- section 3 -->
+  <rect x="70" y="535" width="760" height="65" class="box section" rx="6"/>
+  <text x="85" y="557" class="tag">&lt;section&gt;</text>
+  <text x="85" y="577" class="note">h3 "WAI-ARIA Roles" + paragraph</text>
+
+  <!-- footer -->
+  <rect x="30" y="665" width="840" height="65" class="box footer" rx="6"/>
+  <text x="45" y="690" class="tag">&lt;footer role="contentinfo"&gt;</text>
+  <text x="45" y="710" class="note">CSUN address / contact paragraph</text>
+
+  <text x="45" y="750" font-size="11" fill="#666">Same header/nav/main/article/section(+aside)/footer pattern is reused on every page (index, syntax, structure, links, reference, next).</text>
+</svg>
